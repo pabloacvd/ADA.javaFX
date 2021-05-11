@@ -27,7 +27,9 @@ public class PrimaryController {
 
     @FXML
     public void initialize() {
+        // cambio el titulo del formulario con un setter
         titulo.setText("Lista de clientes");
+        // creo una columna nueva con el texto ID
         TableColumn<Cliente, Integer> idCol = new TableColumn<>("ID");
         idCol.setCellValueFactory(new PropertyValueFactory<Cliente, Integer>("idCliente"));
         nombreCol.setCellValueFactory(new PropertyValueFactory<Cliente, String>("nombre"));

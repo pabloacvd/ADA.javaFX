@@ -9,4 +9,12 @@ public class SecondaryController {
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
     }
+
+    @FXML private void guardar(){
+        System.out.println("estoy guardando");
+    }
+
+    @FXML private void enviar(){
+        System.out.println("estoy enviando");
+    }
 }
